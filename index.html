@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Movilidad Inteligente Pasto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Plataforma de Movilidad Urbana - Pasto</h1>
+
+<div class="container">
+    
+    <div class="mapa">
+        <h2>Mapa de tráfico</h2>
+        <div id="map">
+            <div class="zona verde">Zona Norte - Fluido</div>
+            <div class="zona amarillo">Centro - Tráfico Medio</div>
+            <div class="zona rojo">Sur - Congestionado</div>
+        </div>
+    </div>
+
+    <div class="dashboard">
+        <h2>Datos en tiempo real</h2>
+        <p>Vehículos en circulación: <span id="vehiculos"></span></p>
+        <p>Velocidad promedio: <span id="velocidad"></span> km/h</p>
+        <p>Estado general: <span id="estado"></span></p>
+
+        <button onclick="actualizarDatos()">Actualizar datos</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
